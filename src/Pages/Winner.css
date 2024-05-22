@@ -1,0 +1,30 @@
+.winOut{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top:0;
+    left:0;
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #4F5D64;
+    /* color: #fdabab; */
+}
+.winIn{
+    width: 100vw;
+}
+.winIn img{
+    position: absolute;
+    top:-35%;
+    height: 130px;
+}
+.restartButton{
+    animation: moveUpDown 2s infinite;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.restartButton:hover{
+    background-color: #22282b;
+    color: white;
+}

@@ -1,0 +1,271 @@
+.gameOuter {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ECE5D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.outerGameBoard {
+    height: 510px;
+    width: 510px;
+    border-radius: 20px;
+    position: relative;
+    transform: scale(0.8, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flexBox{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #4F5D64;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.bg1{
+    background: url("../Images/bg1.png");
+    height: 180px;
+    width: 180px;
+    background-size: cover;
+}
+.bg2{
+    background:url("../Images/bg2.png");
+    height: 130px;
+    width: 150px;
+    background-size: cover;
+}
+.bg3{
+    background: url("../Images/bg3.png");
+    height: 180px;
+    width: 180px;
+    background-size: cover;
+}
+.bg4{
+    background: url("../Images/bg4.png");
+    height: 150px;
+    width: 180px;
+    background-size: cover;
+}
+.bg5{
+    height: 150px;
+    width: 150px;
+    display: flex;
+}
+.bg6{
+    background: url("../Images/bg5.png");
+    height: 150px;
+    width: 180px;
+    background-size: cover;
+}
+.bg7{
+    background: url("../Images/bg6.png");
+    height: 180px;
+    width: 180px;
+    background-size: cover;
+}
+.bg8{
+    background: url("../Images/bg7.png");
+    height: 180px;
+    width: 150px;
+    background-size: cover;
+}
+.bg9{
+    background: url("../Images/bg8.png");
+    height:180px;
+    width: 180px;
+    background-size: cover;
+}
+.bg1 .innerBg{
+    position: relative;
+    z-index:1;
+    margin-top: 43px;
+    margin-left: 38px;
+    border-top-left-radius: 29px;
+    background: url("../Images/innerBg.png");
+    height: 145px;
+    width: 145px;
+    background-size: cover;
+}
+.bg2 .innerBg{
+    position: relative;
+    z-index:1;
+    margin-top: 43px;
+    width:145px;
+    height: 145px;
+    background: url("../Images/innerBg.png");
+    background-size: cover;
+    margin-left: 3px
+}
+.bg3 .innerBg{
+    position: relative;
+    z-index:1;
+    margin-top: 43px;
+    margin-right: 50px;
+    border-top-right-radius: 30px;
+    background: url("../Images/innerBg.png");
+    height: 145px;
+    width: 145px;
+    background-size: cover;
+    margin-left: -1.5px;
+}
+.bg4 .innerBg{
+    position: relative;
+    z-index:1;
+    margin-left:38px;
+    height: 145px;
+    background: url("../Images/innerBg.png");
+    width: 145px;
+    background-size: cover;
+    margin-top: 8px;
+}
+.bg5 .innerBg{
+    position: relative;
+    z-index:1;
+    height: 145px;
+    width: 145px;
+    background: url("../Images/innerBg.png");
+    background-size: cover;
+    margin-left: 3px;
+    margin-top: 8px;
+}
+.bg6 .innerBg{
+    position: relative;
+    z-index:1;
+    height: 145px;
+    background: url("../Images/innerBg.png");
+    width: 145px;
+    background-size: cover;
+    margin-left: -1.5px;
+    margin-top: 8px;
+}
+.bg7 .innerBg{
+    position: relative;
+    z-index:1;
+    margin-left: 38px;
+    border-bottom-left-radius: 20px;
+    background: url("../Images/innerBg.png");
+    height: 145px;
+    width: 145px;
+    background-size: cover;
+}
+.bg8 .innerBg{
+    position: relative;
+    z-index:1;
+    width: 145px;
+    background: url("../Images/innerBg.png");
+    height: 145px;
+    background-size: cover;
+    margin-left: 3px;
+}
+.bg9 .innerBg{
+    margin-left: -1.5px;
+    position: relative;
+    z-index:1;
+    border-bottom-right-radius: 30px;
+    background: url("../Images/innerBg.png");
+    height: 145px;
+    width: 145px;
+    background-size: cover;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 20px;
+}
+.restart{
+    margin-right: 10px;
+    letter-spacing: 3px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #4F5D64;
+    color: #EED2A1;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.restart:hover{
+    background-color: #C6D4D9;
+    color: #4F5D64;
+}
+.replay{
+    letter-spacing: 3px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #4F5D64;
+    color: #EED2A1;
+    padding: 5px 10px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.replay:hover{
+    background-color: #C6D4D9;
+    color: #4F5D64;
+}
+.lowerDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+    color: #4F5D64;
+}
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.lowerCircle{
+    /* background-color: #FF9797; */
+    height: 180px;
+    display: flex;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    flex-direction: column;
+}
+.lowerStar{
+    /* background-color: #C6D4D9; */
+    height: 180px;
+    display: flex;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    flex-direction: column;
+}
+.circle{
+    width: 100px;
+}
+.star{
+    width: 100px;
+}
+.hover1{
+    opacity: 0;
+}
+.hover1:hover{
+    opacity: 1;
+}
+.planet1{
+    background-color: #FF9797;
+}
+.cross{
+    background-color: #C6D4D9;
+}
+@media (max-width: 434px) {
+    .outerGameBoard{
+        transform: scale(0.6, 0.6);
+    }
+}

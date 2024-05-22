@@ -1,0 +1,76 @@
+.mainDiv {
+    background: #ECE5D5;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.board {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70vw
+}
+
+.innerDiv {
+    position: relative;
+    height: 85%;
+    width: 85%;
+    border: dashed 3px #E9B98B;
+}
+
+.textDiv {
+    height: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6.5em;
+    font-weight: bold;
+    margin-left: 40px;
+    color: #E9B98B;
+    flex-direction: column;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    color: #ECE5D5;
+    text-decoration: none;
+    background: #4F5D64;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    font-size: 15px;
+    outline: 0;
+    font-weight: bold;
+    position: relative;
+    animation: moveUpDown 2s infinite;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.btn:hover {
+    background-color: #C6D4D9;
+    color: #4F5D64;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
