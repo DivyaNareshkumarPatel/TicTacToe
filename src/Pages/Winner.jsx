@@ -3,32 +3,40 @@ import "./Winner.css";
 import star from "../Images/star1.png";
 import planet from "../Images/planet1.png";
 import draw from "../Images/draw.png";
+import Confetti from 'react-confetti';
 export default function Winner({ winner, restartGame }) {
   const [background, setBackground] = useState("");
   const [image, setImage] = useState("");
   const [text, setText] = useState("");
   const[left, setLeft] = useState("");
+  const [display, setDisplay] = useState("block");
   useEffect(() => {
     if (winner === 'X') {
       setBackground("#E9B98B");
       setImage(planet);
       setText("PLANET WINS")
       setLeft("45%")
+      setDisplay("block")
     } else if (winner === 'Y') {
       setBackground('#C6D4D9');
       setImage(star);
       setText("STAR WINS")
       setLeft("45%")
+      setDisplay("block")
     } else if (winner === 'Draw') {
       setBackground('#fdabab');
       setImage(draw)
       setText("DRAW")
       setLeft("41%")
+      setDisplay("none");
     }
   }, [winner]);
 
   return (
     <div className="winOut">
+      <div style={{display:display}}>
+        <Confetti/>
+      </div>
       <div className="winIn">
         <div
           style={{
