@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Winner.css";
 import star from "../Images/star1.png";
 import planet from "../Images/planet1.png";
-import draw from "../Images/draw.png";
+import draw from "../Images/Circle.png";
 import Confetti from 'react-confetti';
 export default function Winner({ winner, restartGame }) {
   const [background, setBackground] = useState("");
@@ -27,7 +27,7 @@ export default function Winner({ winner, restartGame }) {
       setBackground('#fdabab');
       setImage(draw)
       setText("DRAW")
-      setLeft("41%")
+      setLeft("45%")
       setDisplay("none");
     }
   }, [winner]);
